@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<!-- Run these test cases in chrome browser -->
+<suite name="Suite" parallel ="classes" thread-count="20">
+	<!-- <test name="QRCodescaning"> <classes> <class name="testcases.O3TNGMPassPayment"/> 
+		<class name="testcases.O5TNGSScanPayment"/> </classes> </test> -->
+	<test name="GeneralIsando">
+		<classes>
+			<class name="testcases.O20TNGAddCard" />
+			<class name="testcases.O6TNGAuthorize" />
+			<class name="testcases.O1TNGcnpinPayments" />
+		</classes>
+	</test>
+
+	<test name="Payment Methods Isando">
+		<classes>
+			<class name="testcases.O2TNGMPGSPayment" />
+			<class name="testcases.O7TNGDiners" />
+			<class name="testcases.O4testNGEFTpayment" />
+			<class name="testcases.O9TNGPreAuth" />
+			<class name="testcases.O8TNGMoto" />
+			<class name="testcases.O1TNGcnpinPayments" />
+			<class name="testcases.O6TNGAuthorize" />
+			<class name="testcases.O21TNGStaffcard" />
+		</classes>
+	</test>
+
+	<test name="Recurring Isando">
+		<classes>
+			<class name="testcases.O8TNGMoto" />
+			<class name="testcases.O19TNGMotoRecPay" />
+			<class name="testcases.O1TNGcnpinPayments" />
+			<class name="testcases.O18TNGCnpRec" />
+		</classes>
+	</test>
+
+	<test name="Options-SanlamRealMoto">
+		<classes>
+			<class name="testcases.O10TNGclientInfo" />
+			<class name="testcases.O11TNGcostInfo" />
+			<class name="testcases.O12TNGBillingInfo" />
+			<class name="testcases.O13TNGShiipingInfo" />
+			<class name="testcases.O14TNGItemsInfo" />
+			<class name="testcases.O15TNGTerminalInfoW" />
+			<class name="testcases.O16TNGTerminalInfoWO" />
+			<class name="testcases.O17TNGTrailSub" />
+		</classes>
+	</test>
+
+	<test name="ShopriteTransactions">
+		<classes>
+			<class name="testcases.O22sixty60cnp" />
+			<class name="testcases.O23TranspharmWC" />
+			<class name="testcases.O24CFSWC" />
+			<class name="testcases.O25PSSWC" />
+			<class name="testcases.O26PSSWCRec" />
+			<class name="testcases.O27LCWC" />
+			<class name="testcases.O28TruworthsDev" />
+			<class name="testcases.O29TruworthsQA" />
+			<class name="testcases.O30TruworthsUAT" />
+			<class name="testcases.O31TruworthsSIT" />
+			<class name="testcases.O32TruworthsMAY22" />
+		</classes>
+	</test>
+	<test name="MarkoffFile-Testing">
+		<classes>
+			<class name="testcases.O33MarkoffSBSA" />
+			<class name="testcases.O34MarkoffABSA" />
+			<class name="testcases.O35MarkoffNedbank" />
+			<class name="testcases.O36MarkoffFNB" />
+		</classes>
+	</test>
+</suite> <!-- Suite -->
